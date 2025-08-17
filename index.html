@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Советы и инструменты для писателей: планирование сюжета, персонажи, стиль, редактура, чек-листы. Онлайн-инструменты: счётчик слов, удобочитаемость, генераторы идей, логлайна, плана, персонажей и названий; экспорт в Markdown.">
+  <title>WriterWise — Советы и инструменты для писателей</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">✍️</span>
+        <span class="brand-text">WriterWise</span>
+        <span class="brand-sub">советы и инструменты для писателей</span>
+      </div>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#advice">Советы</a>
+        <a href="#tools">Инструменты</a>
+        <a href="#checklists">Чек-листы</a>
+        <a href="#templates">Шаблоны</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Пишите смелее. Редактируйте умнее.</h1>
+        <p>Практические методики и удобные инструменты, которые помогают доводить текст до публикабельного состояния: от идеи и структуры до языка и правок.</p>
+        <ul class="hero-highlights">
+          <li>структуры сюжетов и планировщик объёма</li>
+          <li>счётчик слов, частотный анализ, удобочитаемость</li>
+          <li>логлайн, промпты, персонажи, названия</li>
+          <li>экспорт черновика и заметок в Markdown</li>
+        </ul>
+      </div>
+      <div class="hero-banner">
+        <a href="https://example.com" target="_blank" rel="nofollow noopener" class="banner-link" aria-label="Перейти на внешний ресурс">
+          <img src="images/alfaBanner(horizontal).jpg" alt="Баннер: полезный ресурс для писателей" class="banner-img">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="advice" class="section">
+      <h2>Практические советы по писательскому ремеслу</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Сюжет и драматургия</h3>
+          <ul class="tight">
+            <li><strong>Конфликт = цель + препятствие + ставки.</strong> Сформулируйте одним предложением, чего герой хочет, что мешает и почему это важно.</li>
+            <li>Держите <strong>линию причинности</strong>: каждое событие следует из предыдущего (не «и потом», а «поэтому/но»).</li>
+            <li>Используйте <strong>точки поворота</strong>: завязка, первый поворот, середина, «всё потеряно», финал. Каждая точка меняет статус-кво.</li>
+            <li>Поддерживайте <strong>ритм</strong> чередованием напряжённых и спокойных сцен; повышайте ставки к концу каждого блока.</li>
+            <li>Тяните «пружину» через <strong>вопросы без ответов</strong> и отложенные разгадки — но платите по счетам в финале.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Персонажи</h3>
+          <ul class="tight">
+            <li><strong>Три слоя:</strong> видимое (привычки), внутреннее (убеждения), глубинное (рана/потребность).</li>
+            <li>Дайте герою <strong>слабость и слепую зону</strong>, которые мешают достигать цели и развиваться.</li>
+            <li><strong>Вектор арки:</strong> из точки А (ошибочное убеждение) в точку Б (новая истина), проявляющуюся в поступках.</li>
+            <li>Контрастируйте персонажей ценностями и тактиками — так сцены рождают конфликт естественно.</li>
+            <li>Диалоги раскрывают характер через выбор слов, под-текст, тактики; избегайте «говорящих голов».</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Сцены и структура</h3>
+          <ul class="tight">
+            <li>У каждой сцены есть <strong>цель героя, конфликт и поворот</strong>. Без них сцена — экспозиция, её стоит сжать или убрать.</li>
+            <li>Входите поздно, <strong>выходите рано</strong>. Сразу в момент изменения, без прелюдий и послесловий.</li>
+            <li><strong>Смена тактики</strong> героя в сцене — сигнал читателю, что ставка растёт.</li>
+            <li>Завершайте мини-крючком: новый вопрос, решение, раскрытие.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Язык и стиль</h3>
+          <ul class="tight">
+            <li>Пишите <strong>конкретно</strong>: глаголы действия вместо существительных, точные существительные вместо абстракций.</li>
+            <li>Убирайте <strong>пустые связки</strong> и канцелярит. Сборники стоп-слов держите под рукой.</li>
+            <li>Следите за <strong>ритмом фраз</strong>: меняйте длину предложений, избегайте монотонности.</li>
+            <li>Показывайте через <strong>сенсорные детали</strong>, а не объяснения. Но не злоупотребляйте «показыванием» в ущерб темпу.</li>
+            <li><strong>Точка зрения и дистанция:</strong> выбирайте один фокус на сцену; соблюдайте внутреннюю логику POV.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Редактирование</h3>
+          <ol class="tight">
+            <li><strong>Структурный проход:</strong> логика сюжета, арки, расстановка сцен; крупные переносы/сжатия.</li>
+            <li><strong>Стилевой проход:</strong> язык, голос, устранение повторов, уплотнение фраз.</li>
+            <li><strong>Корректура:</strong> опечатки, пунктуация, форматы, единообразие терминов и имён.</li>
+          </ol>
+          <p>Используйте таймеры (например, 25 минут фокус + короткий отдых) и бета-ридеров с чётким опросником.</p>
+        </article>
+        <article class="card">
+          <h3>Процесс и дисциплина</h3>
+          <ul class="tight">
+            <li>Определите <strong>ритуал входа</strong> в работу: одно и то же место, музыка, короткий разгонный текст.</li>
+            <li>Ставьте <strong>контроль объёма</strong>: сколько слов хотите написать за сессию; защищайте от отвлечений.</li>
+            <li>Разделяйте <strong>режимы черновика и редактуры</strong>: сначала скорость и смелость, потом качество.</li>
+            <li>Ведите каталог идей; возвращайтесь к ним, когда застряли.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <h2>Инструменты</h2>
+      <p class="muted">Общая область текста используется счётчиком слов, удобочитаемостью и частотным анализом. Остальные генераторы работают независимо.</p>
+
+      <div class="shared-text card">
+        <label for="mainText" class="field-label">Общая область текста</label>
+        <textarea id="mainText" placeholder="Вставьте сюда ваш текст для анализа…" rows="10"></textarea>
+        <div class="field-actions">
+          <button type="button" class="btn" data-action="clear-main">Очистить</button>
+          <button type="button" class="btn" data-action="paste-main">Вставить из буфера</button>
+          <button type="button" class="btn" data-action="copy-main">Копировать</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab-list" role="tablist" aria-label="Панели инструментов">
+          <button class="tab active" role="tab" aria-selected="true" data-target="#tab-metrics">Счётчик и анализ</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-readability">Удобочитаемость</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-prompts">Генератор идей</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-logline">Логлайн</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-outline">План сюжета</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-character">Персонаж</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-titles">Названия</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="#tab-export">Экспорт</button>
+        </div>
+
+        <section id="tab-metrics" class="tab-panel active" role="tabpanel">
+          <div class="grid-2">
+            <div class="card">
+              <h3>Счётчик слов</h3>
+              <div class="metrics" id="metricsBox">
+                <div><span class="metric-label">Слов:</span> <span id="m-words">0</span></div>
+                <div><span class="metric-label">Уникальных слов:</span> <span id="m-unique">0</span></div>
+                <div><span class="metric-label">Предложений:</span> <span id="m-sentences">0</span></div>
+                <div><span class="metric-label">Абзацев:</span> <span id="m-paragraphs">0</span></div>
+                <div><span class="metric-label">Символов с пробелами:</span> <span id="m-chars">0</span></div>
+                <div><span class="metric-label">Символов без пробелов:</span> <span id="m-chars-ns">0</span></div>
+                <div><span class="metric-label">Примерное время чтения:</span> <span id="m-reading">0 мин</span></div>
+              </div>
+              <label class="checkbox"><input type="checkbox" id="opt-exclude-numbers"> Исключать числа</label>
+              <label class="checkbox"><input type="checkbox" id="opt-exclude-short"> Исключать короткие слова (≤2)</label>
+            </div>
+            <div class="card">
+              <h3>Частотный анализ</h3>
+              <div class="table-wrap">
+                <table class="freq-table" id="freqTable" aria-label="Частотный словарь">
+                  <thead>
+                    <tr><th>Слово</th><th>Частота</th></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab-readability" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>Оценка удобочитаемости (приблизительно)</h3>
+            <p class="muted">Метрики ориентировочные и зависят от текста. Используются длина слов, предложений и усреднённые формулы.</p>
+            <div class="grid-2">
+              <div>
+                <ul class="tight">
+                  <li><strong>ARI</strong> (Automated Readability Index): <span id="r-ari">—</span></li>
+                  <li><strong>Средняя длина слова</strong>: <span id="r-avg-word">—</span> символов</li>
+                  <li><strong>Средняя длина предложения</strong>: <span id="r-avg-sent">—</span> слов</li>
+                  <li><strong>Длина абзаца (средняя)</strong>: <span id="r-avg-para">—</span> слов</li>
+                </ul>
+              </div>
+              <div>
+                <p id="r-interpretation" class="note"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab-prompts" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>Генератор творческих идей</h3>
+            <div class="grid-3">
+              <label class="field">
+                <span class="field-label">Жанр</span>
+                <select id="p-genre">
+                  <option>Фантастика</option>
+                  <option>Фэнтези</option>
+                  <option>Детектив</option>
+                  <option>Триллер</option>
+                  <option>Романтика</option>
+                  <option>Историческая проза</option>
+                  <option>Реализм</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field-label">Тональность</span>
+                <select id="p-tone">
+                  <option>Лёгкая</option>
+                  <option>Ироничная</option>
+                  <option>Мрачная</option>
+                  <option>Надежда</option>
+                  <option>Эпическая</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field-label">Ключевые слова (через запятую)</span>
+                <input id="p-keywords" type="text" placeholder="поезд, всеобщее забытьё, запах дыма">
+              </label>
+            </div>
+            <div class="field-actions">
+              <button class="btn" id="p-generate">Сгенерировать 5 идей</button>
+              <button class="btn" id="p-generate-one">Ещё одну</button>
+              <button class="btn" id="p-copy">Копировать идеи</button>
+            </div>
+            <ol id="p-output" class="tight"></ol>
+          </div>
+        </section>
+
+        <section id="tab-logline" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>Конструктор логлайна</h3>
+            <div class="grid-2">
+              <label class="field"><span class="field-label">Кто герой?</span><input id="l-hero" type="text" placeholder="скромная библиотекарь"></label>
+              <label class="field"><span class="field-label">Чего он хочет?</span><input id="l-goal" type="text" placeholder="спасти семейный архив"></label>
+              <label class="field"><span class="field-label">Что мешает?</span><input id="l-antagonist" type="text" placeholder="жадный девелопер и собственные сомнения"></label>
+              <label class="field"><span class="field-label">Ставки</span><input id="l-stakes" type="text" placeholder="иначе родовая память будет утеряна"></label>
+              <label class="field"><span class="field-label">Сеттинг/контекст</span><input id="l-setting" type="text" placeholder="маленький приморский город"></label>
+              <label class="field"><span class="field-label">Уникальный крючок</span><input id="l-hook" type="text" placeholder="архив «отвечает» письмами прошлого"></label>
+            </div>
+            <div class="field-actions">
+              <button class="btn" id="l-generate">Сформировать логлайн</button>
+              <button class="btn" id="l-copy">Копировать</button>
+            </div>
+            <p id="l-output" class="note"></p>
+          </div>
+        </section>
+
+        <section id="tab-outline" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>План сюжета и объёма</h3>
+            <div class="grid-3">
+              <label class="field"><span class="field-label">Структура</span>
+                <select id="o-structure">
+                  <option value="three">3 акта (классика)</option>
+                  <option value="hero">Путь героя</option>
+                </select>
+              </label>
+              <label class="field"><span class="field-label">Объём, слов</span>
+                <input id="o-words" type="number" min="1000" step="500" value="60000">
+              </label>
+              <label class="field"><span class="field-label">Жанр (влияет на акценты)</span>
+                <select id="o-genre">
+                  <option>Фантастика</option>
+                  <option>Фэнтези</option>
+                  <option>Детектив</option>
+                  <option>Триллер</option>
+                  <option>Романтика</option>
+                  <option>Историческая проза</option>
+                  <option>Реализм</option>
+                </select>
+              </label>
+            </div>
+            <div class="field-actions">
+              <button class="btn" id="o-generate">Создать план</button>
+              <button class="btn" id="o-copy">Копировать план</button>
+            </div>
+            <div id="o-output" class="table-wrap"></div>
+          </div>
+        </section>
+
+        <section id="tab-character" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>Конструктор персонажа</h3>
+            <div class="grid-3">
+              <label class="field"><span class="field-label">Имя</span><input id="c-name" type="text" placeholder="Арина"></label>
+              <label class="field"><span class="field-label">Профессия/роль</span><input id="c-role" type="text" placeholder="криминальный журналист"></label>
+              <label class="field"><span class="field-label">Возраст</span><input id="c-age" type="text" placeholder="28"></label>
+            </div>
+            <div class="grid-3">
+              <label class="field"><span class="field-label">Архетип</span><input id="c-archetype" type="text" placeholder="Бунтарь"></label>
+              <label class="field"><span class="field-label">Слабость</span><input id="c-flaw" type="text" placeholder="не умеет просить помощи"></label>
+              <label class="field"><span class="field-label">Желание</span><input id="c-desire" type="text" placeholder="доказать свою состоятельность"></label>
+            </div>
+            <div class="grid-2">
+              <label class="field"><span class="field-label">Секрет</span><input id="c-secret" type="text" placeholder="скрывает участие в прошлом скандале"></label>
+              <label class="field"><span class="field-label">Триггеры/травма</span><input id="c-wound" type="text" placeholder="предательство наставника"></label>
+            </div>
+            <div class="field-actions">
+              <button class="btn" id="c-random">Случайно заполнить</button>
+              <button class="btn" id="c-copy">Копировать карточку</button>
+            </div>
+            <div id="c-output" class="note"></div>
+          </div>
+        </section>
+
+        <section id="tab-titles" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>Генератор названий</h3>
+            <div class="grid-3">
+              <label class="field"><span class="field-label">Тема/образ</span><input id="t-theme" type="text" placeholder="туман"></label>
+              <label class="field"><span class="field-label">Тип</span>
+                <select id="t-type">
+                  <option>Лиричное</option>
+                  <option>Жанровое</option>
+                  <option>Минималистичное</option>
+                  <option>Провокативное</option>
+                </select>
+              </label>
+              <label class="field"><span class="field-label">Словарь усилителей</span><input id="t-mods" type="text" placeholder="ночной, забытый, последний"></label>
+            </div>
+            <div class="field-actions">
+              <button class="btn" id="t-generate">Сгенерировать 15 вариантов</button>
+              <button class="btn" id="t-copy">Копировать названия</button>
+            </div>
+            <ol id="t-output" class="tight"></ol>
+          </div>
+        </section>
+
+        <section id="tab-export" class="tab-panel" role="tabpanel">
+          <div class="card">
+            <h3>Экспорт заметок</h3>
+            <p>Соберите выбранные результаты и выгрузите в Markdown.</p>
+            <div class="grid-2">
+              <label class="checkbox"><input type="checkbox" id="x-include-text" checked> Включить общий текст</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-metrics" checked> Метрики и частоты</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-readability" checked> Удобочитаемость</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-prompts"> Идеи</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-logline"> Логлайн</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-outline"> План</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-character"> Персонаж</label>
+              <label class="checkbox"><input type="checkbox" id="x-include-titles"> Названия</label>
+            </div>
+            <div class="field-actions">
+              <button class="btn" id="x-generate">Сформировать Markdown</button>
+              <button class="btn" id="x-download" disabled>Скачать .md</button>
+              <button class="btn" id="x-copy" disabled>Копировать</button>
+            </div>
+            <pre id="x-output" class="export-output" aria-label="Предпросмотр Markdown"></pre>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="checklists" class="section">
+      <h2>Чек-листы</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Перед отправкой текста</h3>
+          <ul class="tight checklist">
+            <li><label class="checkbox"><input type="checkbox"> Главный конфликт сформулирован в одном предложении</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Персонажи различимы по голосу и целям</label></li>
+            <li><label class="checkbox"><input type="checkbox"> В каждой сцене есть цель, препятствие, поворот</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Убраны повторы и «ватные» абзацы</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Проверены факты, единообразие имён и терминов</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Финал отвечает на центральный вопрос</label></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Сцена — быстрая проверка</h3>
+          <ul class="tight checklist">
+            <li><label class="checkbox"><input type="checkbox"> Чья точка зрения и зачем эта сцена герою</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Конфликт построен на противоречии целей</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Есть изменение статуса-кво к концу</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Нет «пустых» действий и пояснений</label></li>
+            <li><label class="checkbox"><input type="checkbox"> Завершение с вопросом/решением/разгадкой</label></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="templates" class="section">
+      <h2>Шаблоны формулировок</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Логлайн (шаблон)</h3>
+          <p>Когда <em>[событие-возмущение]</em>, <em>[герой]</em> должен <em>[цель]</em>, сталкиваясь с <em>[антагонист/препятствие]</em>, иначе <em>[ставки]</em>.</p>
+        </article>
+        <article class="card">
+          <h3>Сцена (цель-конфликт-поворот)</h3>
+          <p><strong>Цель:</strong> чего пытается добиться герой в сцене. <strong>Конфликт:</strong> кто/что мешает. <strong>Поворот:</strong> чем сцена меняет ситуацию.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="card">
+        <details>
+          <summary>Как пользоваться областью текста и анализом?</summary>
+          <p>Вставьте черновик в «Общую область текста». Метрики и частотный анализ обновляются автоматически. Удобочитаемость даст ориентиры по длине слов и предложений.</p>
+        </details>
+        <details>
+          <summary>Насколько точны метрики удобочитаемости?</summary>
+          <p>Это приближение. Важнее сохранять ясность, конкретику и разнообразие ритма, чем подгонять текст под формулы.</p>
+        </details>
+        <details>
+          <summary>Можно ли экспортировать результаты?</summary>
+          <p>Да, используйте вкладку «Экспорт» — сформируйте Markdown и скачайте файл.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-inline">WriterWise</div>
+      <nav class="footer-nav">
+        <a href="#advice">Советы</a>
+        <a href="#tools">Инструменты</a>
+        <a href="#checklists">Чек-листы</a>
+        <a href="#templates">Шаблоны</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

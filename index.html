@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Писательский Навигатор: подробные советы для авторов, интерактивные инструменты для текста, персонажей, сюжета и редактуры">
+  <title>Писательский Навигатор — советы, инструменты, планирование</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">✍️ Писательский Навигатор</div>
+    <nav class="top-nav" aria-label="Основная навигация">
+      <a href="#advice">Советы</a>
+      <a href="#tools">Инструменты</a>
+      <a href="#planner">Планировщик</a>
+      <a href="#characters">Персонажи</a>
+      <a href="#editor">Редактор</a>
+      <a href="#pomodoro">Помодоро</a>
+      <a href="#resources">Справочник</a>
+    </nav>
+    <div class="header-actions">
+      <input id="globalSearch" class="search" type="search" placeholder="Поиск по сайту…" aria-label="Поиск по сайту">
+      <button id="themeToggle" class="btn" aria-label="Переключить тему">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <h1>Практичный сайт для писателей</h1>
+        <p class="lead">Глубокие советы + набор инструментов: редактор, анализ текста, генераторы идей, конструктор сюжета, карточки персонажей, чек-листы редактуры и многое другое.</p>
+        <div class="cta">
+          <a class="btn primary" href="#editor">Открыть редактор</a>
+          <a class="btn" href="#tools">Посмотреть инструменты</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="advice" class="section">
+      <h2>Советы и методики</h2>
+
+      <details open>
+        <summary>Как находить идеи</summary>
+        <div class="content">
+          <ul>
+            <li><strong>Наблюдайте: </strong>фиксируйте детали мира — фразы, жесты, мелочи быта. Дневник наблюдений быстро превращается в банк идей.</li>
+            <li><strong>Метод «что, если»: </strong>берём обычную ситуацию и добавляем отклонение от нормы. Пример: «Что, если будильник сегодня прозвенел на 100 лет позже?»</li>
+            <li><strong>Комбинаторика: </strong>скрестите два далеких контекста (жанр, эпоха, профессию, ценность). Получаются неожиданные связки и новые конфликты.</li>
+            <li><strong>Личный опыт: </strong>переработайте собственные страхи и мечты. Настоящность переживаний делает текст убедительным.</li>
+            <li><strong>От противного: </strong>возьмите штамп — и переверните ожидания. Не герой спасает мир, а мир спасает героя.</li>
+            <li><strong>Бриф на идею: </strong>сформулируйте за 1–2 предложения: герой, цель, препятствие, ставки, поворот. Это основа логлайна.</li>
+          </ul>
+          <blockquote>Идея сильна, когда в ней есть ясная <em>надежда</em> героя, конкретное <em>препятствие</em> и ощутимые <em>ставки</em>.</blockquote>
+        </div>
+      </details>
+
+      <details>
+        <summary>Сюжет и структура</summary>
+        <div class="content grid-2">
+          <div>
+            <h3>Три акта</h3>
+            <ol>
+              <li><strong>Завязка:</strong> герой, мир, крючок, событие-разрыв привычного.</li>
+              <li><strong>Противостояние:</strong> попытки, провалы, новая цена ошибки, середина с разворотом.</li>
+              <li><strong>Развязка:</strong> финальное испытание, выбор, последствия.</li>
+            </ol>
+            <h3>Середина как поворот</h3>
+            <ul>
+              <li>Переворачивает смысл цели или понимание угрозы.</li>
+              <li>Поднимает ставки и сужает пространство для компромиссов.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Сцена как единица действия</h3>
+            <ul>
+              <li><strong>Цель сцены:</strong> что меняется безвозвратно?</li>
+              <li><strong>Конфликт:</strong> внешнее/внутреннее сопротивление цели.</li>
+              <li><strong>Исход:</strong> да/нет/да, но/нет, и хуже.</li>
+              <li><strong>Крючок выхода:</strong> вопрос, который тянет дальше.</li>
+            </ul>
+            <h3>Слои сюжета</h3>
+            <ul>
+              <li><strong>Внешний:</strong> события, препятствия.</li>
+              <li><strong>Внутренний:</strong> убеждения, страхи, архетип.</li>
+              <li><strong>Тематический:</strong> позиция автора, моральный контраст.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Персонажи и арки</summary>
+        <div class="content grid-2">
+          <div>
+            <h3>Ядро персонажа</h3>
+            <ul>
+              <li><strong>Желание:</strong> чего хочет сейчас.</li>
+              <li><strong>Нужда:</strong> чего ему на самом деле не хватает для роста.</li>
+              <li><strong>Страх/рана:</strong> источник защитных стратегий.</li>
+              <li><strong>Ценности:</strong> ради чего он готов жертвовать.</li>
+            </ul>
+            <h3>Арка</h3>
+            <ul>
+              <li>Стартовая ложная установка → конфликты → прозрение → новый выбор.</li>
+              <li>Контрастируйте арки персонажей для дополнительного напряжения.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Практика</h3>
+            <ul>
+              <li>Дайте каждому герою <em>сцену правды</em> — момент, когда его мотивы проявляются явно.</li>
+              <li>Найдите <em>вещь-символ</em> героя и обыгрывайте её эволюцию.</li>
+              <li>Проверка: если убрать героя — сюжет рушится? Если нет, усиливайте функции в сценах.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Диалоги</summary>
+        <div class="content grid-2">
+          <div>
+            <ul>
+              <li>Каждая реплика имеет цель и скрытый подтекст.</li>
+              <li>Столкните цели собеседников — появится искра.</li>
+              <li>Режьте «да‑здравствуйте» и дубли очевидного.</li>
+              <li>Используйте паузы, перебивания, невербалку.</li>
+              <li>Голос каждого персонажа узнаваем: словарь, ритм, длина фраз.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Техники</h3>
+            <ul>
+              <li><strong>Врезки:</strong> действие в паузе между репликами.</li>
+              <li><strong>Несоответствие:</strong> слова говорят одно, поведение — другое.</li>
+              <li><strong>Инфодайвинг без экспозиции:</strong> информация через конфликт.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Описание и атмосфера</summary>
+        <div class="content">
+          <ul>
+            <li>Точность важнее длины: ищите метафору, которая работает на тему.</li>
+            <li>Описывайте то, что может влиять на выбор героя.</li>
+            <li>Выбирайте 1–2 детали‑якоря вместо каталога предметов.</li>
+            <li>Используйте чувственные каналы (зрение, слух, запах, осязание, вкус) там, где они уместны драматически.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Стиль, голос, пунктуация</summary>
+        <div class="content grid-2">
+          <div>
+            <ul>
+              <li><strong>Голос:</strong> позиция наблюдения + лексика + ритм фразы.</li>
+              <li><strong>Экономия слов:</strong> убирайте пустые усилители (очень, крайне, весьма) и дубли.</li>
+              <li><strong>Глаголы:</strong> предпочитайте активные, точные, конкретные.</li>
+              <li><strong>Пунктуация:</strong> ритм мысли. Знаки — не украшения, а логика.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Чек‑лист саморедактуры</h3>
+            <ul>
+              <li>Каждая сцена меняет статус‑кво?</li>
+              <li>Персонаж действует, а не комментирует?</li>
+              <li>Дубли/повторы/канцелярит вычищены?</li>
+              <li>Слишком длинные предложения разбиты?</li>
+              <li>Метафоры работают на тему?</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Процесс: дисциплина и мотивация</summary>
+        <div class="content">
+          <ul>
+            <li>Мини‑привычка: 10 минут письма — даже в плохой день.</li>
+            <li>Разделяйте режимы: черновик, редактура, полировка. Не смешивайте.</li>
+            <li>Рабочий цикл: цель → спринт → рефлексия (что сработало/мешало) → корректировка.</li>
+            <li>Готовьте рабочее место и ритуал входа: музыка, чай, короткая разминка для рук.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Издание и самиздат</summary>
+        <div class="content grid-2">
+          <div>
+            <h3>Подготовка рукописи</h3>
+            <ul>
+              <li>Единый формат: читаемый шрифт, интервалы, поля, нумерация страниц.</li>
+              <li>Синопсис: 1–2 страницы, раскрывающие сюжет и развязку.</li>
+              <li>Аннотация: обещание жанра, крючок, герой, конфликт, уникальность.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Маркетинговые основы</h3>
+            <ul>
+              <li>Позиционирование: что уникального читает у вас аудитория?</li>
+              <li>Обложка и логлайн соответствуют жанровым ожиданиям.</li>
+              <li>Бета‑читатели: целевая аудитория даёт раннюю обратную связь.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="tools" class="section">
+      <h2>Инструменты</h2>
+
+      <div class="tool" id="editor">
+        <h3>Редактор текста</h3>
+        <div class="toolbar">
+          <button class="btn" id="clearEditor">Очистить</button>
+          <button class="btn" id="importText">Импорт .txt/.md</button>
+          <button class="btn" id="exportTxt">Экспорт .txt</button>
+          <button class="btn" id="exportMd">Экспорт .md</button>
+          <label class="inline">
+            <input type="checkbox" id="liveAnalyze"> Авто‑анализ
+          </label>
+        </div>
+        <textarea id="writerArea" rows="14" placeholder="Пишите здесь… Ваш текст автоматически сохраняется в браузере."></textarea>
+        <div class="stats" id="editorStats" aria-live="polite"></div>
+        <div class="analyzer">
+          <button class="btn primary" id="runAnalyze">Проанализировать текст</button>
+          <canvas id="sentenceChart" width="600" height="200" aria-label="Гистограмма длин предложений"></canvas>
+          <div class="results" id="analyzeResults"></div>
+          <div class="preview" id="highlightPreview" aria-label="Подсветка проблем"></div>
+          <input type="file" id="fileInput" accept=".txt,.md" hidden>
+        </div>
+      </div>
+
+      <div class="tool" id="generators">
+        <h3>Генераторы идей</h3>
+        <div class="grid-2">
+          <div>
+            <h4>Имена персонажей</h4>
+            <div class="toolbar">
+              <select id="nameCulture">
+                <option value="ru">Русские</option>
+                <option value="en">Английские</option>
+                <option value="fantasy">Фантазийные</option>
+                <option value="intl">Интернациональные</option>
+              </select>
+              <select id="nameGender">
+                <option value="any">Любой</option>
+                <option value="f">Женские</option>
+                <option value="m">Мужские</option>
+              </select>
+              <button class="btn" id="genNames">Сгенерировать</button>
+            </div>
+            <ul id="nameList" class="list"></ul>
+          </div>
+          <div>
+            <h4>Сюжетные крючки</h4>
+            <div class="toolbar">
+              <button class="btn" id="genHooks">10 идей</button>
+            </div>
+            <ol id="hookList" class="list"></ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool" id="planner">
+        <h3>Конструктор сюжета</h3>
+        <div class="toolbar">
+          <label class="inline">Шаблон
+            <select id="outlineTemplate">
+              <option value="threeAct">3 акта</option>
+              <option value="freytag">Пирамида Фрейтага</option>
+              <option value="hero">Путь героя</option>
+            </select>
+          </label>
+          <button class="btn" id="addBeat">Добавить узел</button>
+          <button class="btn" id="saveOutline">Сохранить</button>
+          <button class="btn" id="exportOutlineMd">Экспорт .md</button>
+          <button class="btn" id="clearOutline">Очистить</button>
+        </div>
+        <div id="outlineBoard" class="board"></div>
+      </div>
+
+      <div class="tool" id="characters">
+        <h3>Карточки персонажей</h3>
+        <form id="characterForm" class="grid-2">
+          <div>
+            <label>Имя<input type="text" id="chName" required></label>
+            <label>Роль в истории<input type="text" id="chRole"></label>
+            <label>Цель героя<input type="text" id="chGoal"></label>
+            <label>Внутренний конфликт<input type="text" id="chInner"></label>
+            <label>Слабость/рана<input type="text" id="chWound"></label>
+          </div>
+          <div>
+            <label>Арка изменения<textarea id="chArc" rows="3"></textarea></label>
+            <label>Голос/лексика<textarea id="chVoice" rows="3"></textarea></label>
+            <label>Приметы/символ<textarea id="chSymbol" rows="3"></textarea></label>
+            <button class="btn primary" type="submit">Добавить персонажа</button>
+          </div>
+        </form>
+        <div class="toolbar">
+          <input type="search" id="chSearch" placeholder="Фильтр по имени/роли…">
+          <button class="btn" id="exportCharacters">Экспорт JSON</button>
+          <button class="btn" id="clearCharacters">Очистить</button>
+        </div>
+        <div id="characterList" class="cards"></div>
+      </div>
+
+      <div class="tool" id="pomodoro">
+        <h3>Помодоро и цели</h3>
+        <div class="grid-2">
+          <div>
+            <h4>Таймер Помодоро</h4>
+            <div class="toolbar">
+              <label class="inline">Письмо (мин)
+                <input type="number" id="pomodoroWork" value="25" min="1" max="90">
+              </label>
+              <label class="inline">Перерыв (мин)
+                <input type="number" id="pomodoroBreak" value="5" min="1" max="30">
+              </label>
+              <button class="btn" id="startPomodoro">Старт</button>
+              <button class="btn" id="pausePomodoro">Пауза</button>
+              <button class="btn" id="resetPomodoro">Сброс</button>
+            </div>
+            <div class="timer" id="pomodoroDisplay">25:00</div>
+          </div>
+          <div>
+            <h4>Цель по словам</h4>
+            <div class="toolbar">
+              <label class="inline">Цель (слов)
+                <input type="number" id="wordGoal" value="2000" min="1" step="100">
+              </label>
+              <button class="btn" id="saveGoal">Сохранить цель</button>
+              <button class="btn" id="addFromEditor">Зачесть слова из редактора</button>
+              <button class="btn" id="resetProgress">Сбросить прогресс</button>
+            </div>
+            <div class="progress">
+              <div id="goalProgressBar" class="bar"><span id="goalProgressText">0 / 2000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <h2>Справочник и чек‑листы</h2>
+      <details>
+        <summary>Частые стилистические проблемы</summary>
+        <div class="content">
+          <ul>
+            <li><strong>Канцелярит:</strong> «осуществлять», «в рамках», «путём». Меняйте на простые глаголы.</li>
+            <li><strong>Пассив:</strong> «было принято решение». Лучше «мы решили/он решил».</li>
+            <li><strong>Абстракции:</strong> «произошло взаимодействие» → «они встретились и поспорили».</li>
+            <li><strong>Пустые усилители:</strong> «очень», «крайне», «безумно». Ставьте точную деталь вместо усилителя.</li>
+            <li><strong>Штампы и клише:</strong> «глаза как море», «как гром среди ясного неба».</li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary>Мини‑словник замен</summary>
+        <div class="content grid-2">
+          <div>
+            <ul>
+              <li>осуществлять → делать</li>
+              <li>производить → делать/создавать</li>
+              <li>осуществление → выполнение</li>
+              <li>в целях → чтобы</li>
+              <li>в рамках → в/во</li>
+              <li>является → это/есть/бывает</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>путём → с помощью/через</li>
+              <li>направлен на → помогает/делает</li>
+              <li>обеспечивает → даёт/позволяет</li>
+              <li>осуществлён → сделан</li>
+              <li>имеет место → происходит</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+      <details>
+        <summary>Чек‑лист финальной вычитки</summary>
+        <div class="content">
+          <ul>
+            <li>Опечатки, повторы слов, двойные пробелы.</li>
+            <li>Имена/термины пишутся единообразно.</li>
+            <li>Факты и логика событий согласованы.</li>
+            <li>Длина предложений чередуется для ритма.</li>
+            <li>Последняя сцена резонирует с первой.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано с заботой о писателях. На сайте нет счётчиков просмотров, комментариев и дат.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
